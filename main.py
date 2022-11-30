@@ -5,6 +5,7 @@ if __name__ == '__main__':
 
     deleted_branches = actions.run_action(
         ignore_branches=ignore_branches,
+        github_token=github_token,
         last_commit_age_days=last_commit_age_days,
         dry_run=dry_run,
         github_repo=github_repo,
