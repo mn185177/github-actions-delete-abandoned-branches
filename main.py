@@ -8,7 +8,6 @@ if __name__ == '__main__':
         last_commit_age_days=last_commit_age_days,
         dry_run=dry_run,
         github_repo=github_repo,
-        github_token=github_token,
         github_base_url=github_base_url
     )
 
