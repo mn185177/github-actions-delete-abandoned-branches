@@ -18,10 +18,10 @@ inputs:
     default: "60"
   dry_run:
     description: "Whether we're actually deleting branches at all. Defaults to 'yes'. Possible values: yes, no (case sensitive)"
-    required: true
+    required: false
   github_token:
     description: "The github token to use on requests to the github api"
-    required: true
+    required: false
   github_base_url:
     description: "The API base url to be used in requests to GitHub Enterprise"
     required: false
