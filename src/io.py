@@ -33,8 +33,8 @@ def parse_input() -> (list, int, bool, str, str, str):
 
 
 def format_output(output_strings: dict) -> None:
+  with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
     for name, value in output_strings.items():
-        #print(f'::set-output name={name}::{value}')
-        with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
         print(f'{name}={value}', file=fh)
+        #print(f'::set-output name={name}::{value}')
         
